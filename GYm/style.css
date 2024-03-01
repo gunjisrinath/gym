@@ -1,0 +1,211 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    color: white;
+}
+img{
+    width: 100%;
+}
+body{
+    background-color: #212121;
+}
+nav{
+    background-color: whitesmoke;
+}
+.navImg{
+    display: flex;
+    align-items: center;
+}
+/* mobile media queries */
+@media(min-width:300px){
+    nav img{
+        height: 5vh;
+        width: auto;
+       margin-right: 1rem;
+      
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+        padding:2vh 0;
+        
+    }
+    .navText{
+        color: black;
+        
+        font-size: 2rem;
+    }
+    .mainCon h3,p{
+        text-align: center;
+    }
+    .mainCon h3{
+        margin-top: 4vh;
+    }
+    .mainCon img{
+        padding-top: 4vh;
+    }
+    .formCon{
+        background-color: white;
+        padding: 1.5rem;
+        width: 80%;
+        margin: 2vh auto;
+        border-radius: 12px;
+        
+
+    }
+    .formCon label{
+        color: #212121;
+        margin-left: 1rem;
+    }
+    .formCon input{
+        border: none;
+        padding: 0.8rem;
+        outline: none;
+        font-size: 16px;
+         color:green;
+        border-bottom: 1px solid #212121;
+        width: 90%;
+    }
+    .gender{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width: 50%;
+        font-size: 1rem;
+        
+        /* padding: 1rem; */
+    }
+    .checkContainer{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+        margin-left: 35px;
+        width: 40%;
+        font-size: 17px;
+      
+    }
+    .button{
+        background: #212121;
+        font-weight: bold;
+        outline: none;
+        border: none;
+        width: 90%;
+        padding: 0.9rem;
+        border-radius: 12px;
+        margin-top: 2vh;
+        
+       
+    }
+    .equipmentList h3{
+        text-align: center;
+
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .card{
+        padding: 1.5rem;
+        background: white;
+        border-radius: 12px;
+        margin: 1.5rem;
+        margin-bottom: 1rem;
+           
+    }
+    .segmentA{
+        background: white;
+    }
+.segmentA h3{
+    color:black;
+    text-align: center;
+    padding: 2vh;
+    font-weight: bolder;
+}
+.segmentB h3{
+    text-align: center;
+    padding: 2vh;
+
+}
+
+    
+}
+@media(min-width:700px){
+    .mainCon h3,p{
+        font-size: 1.7rem;
+    }
+    .equipmentList h3{
+        font-size: 1.7rem;
+
+    }
+    .cards{
+        margin: 4rem;
+    }
+    .segment{
+        display: flex;
+        align-items: center;
+    }
+}
+@media(min-width:900px){
+    nav{
+        justify-content: left;
+        padding-left: 10vw;
+    }
+    .mainCon h3,p{
+        display: none;
+    }
+    .mainCon{
+        padding-top: 8vh;
+        display: flex;
+        flex-direction: row-reverse;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .mainConImg{
+       width: 100%;
+       height: 70vh;
+       margin-left: 4rem;
+    }
+    .formCon{
+        width: 50%;
+        height: 60vh;
+        margin-top: 2rem;
+    }
+    .button{
+        margin-left: 1.4rem;
+        width: 40%;
+        height: 8vh;
+       
+    }
+    .formCon input{
+        font-size: 12px;
+    }
+    .formCon form{
+        padding: 0rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .equipmentList h3{
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+    .cards{
+        display: flex;
+        grid-template-columns:repeat(4,1fr) ;
+    }
+    .segment{
+      padding: 1rem;
+    }
+    .segmentA h3{
+        font-size: 1rem;
+    }
+    .segmentB img{
+        font-size: 1rem;
+    }
+    
+}
